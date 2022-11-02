@@ -1,0 +1,19 @@
+{
+  "name": "quantumunit/http",
+  "description": "description",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "david",
+      "email": "david@quantumunit.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-0": {
+      "QuantumUnit\\Http\\": "src/"
+    }
+  }
+}
