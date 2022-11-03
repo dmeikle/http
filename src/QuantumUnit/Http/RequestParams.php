@@ -46,6 +46,18 @@ class RequestParams
     protected $siteURL;
 
     /**
+     * @param array $params
+     */
+    public function __construct(array $params = array()) {
+
+        foreach($params as $key => $value) {
+            if(property_exists($this, $key)) {
+                $this->$key = $value;
+            }
+        }
+    }
+
+    /**
      * @return mixed
      */
     public function getSiteURL() {
